@@ -96,7 +96,7 @@ WSGI_APPLICATION = "amuj_backend_demo.wsgi.application"
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 DATABASES = {
-    "default":  dj_database_url.config()
+    "default":  dj_database_url.parse(os.getenv(""))
 }
 
 # DATABASES = {
